@@ -5,6 +5,11 @@
   "projects": {
     "kvin-z": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/kvin-z",
       "sourceRoot": "projects/kvin-z/src",
       "prefix": "kz",

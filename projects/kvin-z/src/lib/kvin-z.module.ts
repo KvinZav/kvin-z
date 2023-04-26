@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { KvinZComponent } from './kvin-z.component';
+import { MusicComponent } from './components/music/music.component';
 
 
 
 @NgModule({
   declarations: [
-    KvinZComponent
+    KvinZComponent,
+    MusicComponent
   ],
   imports: [
   ],
