@@ -3,5 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "kvin-z": {
+      "projectType": "library",
+      "root": "projects/kvin-z",
+      "sourceRoot": "projects/kvin-z/src",
+      "prefix": "kz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/kvin-z/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/kvin-z/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/kvin-z/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kvin-z/src/test.ts",
+            "tsConfig": "projects/kvin-z/tsconfig.spec.json",
+            "karmaConfig": "projects/kvin-z/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "5c2785ab-2718-4cb9-aeba-cf576f95117a"
   }
 }
